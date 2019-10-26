@@ -6,10 +6,15 @@ let slider = {
     slideImg: document.getElementById('slide-img'),
 
     start: function () {
-        this.leftImg.addEventListener('click', this.onShowLeftImg);
-        this.rightImg.addEventListener('click', this.onShowRightImg);
+        let that = this;
 
-        this.imageArray = [];
+        this.leftImg.addEventListener('click', function (event) {
+            that.onShowLeftImg(event);
+        });
+        this.rightImg.addEventListener('click', function (event) {
+            that.onShowRightImg(event);
+        });
+
         this.imageArray.push('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQx6kbyGsin9D0M0GstdLyeYnRxtMkTHx8fCHi1Rf_tPDhDvcmT');
         this.imageArray.push('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTJdkgTBQc2qWOkzlvG6_GIMZOyiBKOcjTlw77zE-VEDQJSguvE');
         this.imageArray.push('https://i.ytimg.com/vi/YizPeVoFDCs/hqdefault.jpg');
