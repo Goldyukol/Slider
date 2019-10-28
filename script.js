@@ -1,4 +1,6 @@
-slider.start();
+let slider = sliderFactory.createNewSlider();
+
+slider.start('itk-slider');
 
 
 // let leftImg = document.getElementById('left-img');
