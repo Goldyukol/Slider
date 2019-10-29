@@ -1,4 +1,4 @@
-let slider = sliderFactory.createNewSlider();
+let slider = new Slider();
 
 slider.start('itk-slider');
 
